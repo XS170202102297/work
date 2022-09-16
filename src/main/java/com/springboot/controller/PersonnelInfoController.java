@@ -10,6 +10,7 @@ import com.springboot.common.lang.Result;
 import com.springboot.entity.PersonnelInfo;
 import com.springboot.mapper.PersonnelInfoMapper;
 import com.springboot.service.PersonnelInfoService;
+import lombok.extern.slf4j.Slf4j;
 import org.apache.shiro.authz.annotation.RequiresAuthentication;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.validation.annotation.Validated;
@@ -25,6 +26,7 @@ import java.util.*;
  * @author jb
  * @since 2020-12-09
  */
+@Slf4j
 @RestController
 @RequestMapping("/pInfo")
 public class PersonnelInfoController {
